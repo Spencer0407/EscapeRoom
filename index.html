@@ -4,13 +4,54 @@
 
 <p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
 
-<button onclick="myFunction()">Click me</button>
+<button onclick="myFunction1()">Click me</button>
+<button onclick="myFunction2()">Click me</button>
+<button onclick="myFunction3()">Click me</button>
+<button onclick="myFunction4()">Click me</button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
+var NUMBER1 = 0;
+var NUMBER2 = 0;
+var NUMBER3 = 0;
+var NUMBER4 = 0;
+function myFunction1() {
+    NUMBER1 += 1;
+    if(NUMBER1%10 == 0)
+    {
+    	NUMBER1 -= 10;
+    }
+    PRINTNUMBER();
+}
+function myFunction2() {
+    NUMBER2 += 1;
+    if(NUMBER2%10 == 0)
+    {
+    	NUMBER2 -= 10;
+    }
+        PRINTNUMBER();
+    //document.getElementById("demo").innerHTML = NUMBER;
+}
+function myFunction3() {
+    NUMBER3 += 1;
+    if(NUMBER3%10 == 0)
+    {
+    	NUMBER3 -= 10;
+    }
+        PRINTNUMBER();
+}
+function myFunction4() {
+    NUMBER4 += 1;
+    if(NUMBER4%10 == 0)
+    {
+    	NUMBER4 -= 10;
+    }
+        PRINTNUMBER();
+    
+}
+function PRINTNUMBER(){
+	document.getElementById("demo").innerHTML = NUMBER1+""+NUMBER2+""+NUMBER3+""+NUMBER4;
 }
 </script>
 
