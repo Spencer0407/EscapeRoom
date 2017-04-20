@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
+	<style>
+#firstButton{
+
+	background-color:red;
+}
+#secondButton{
+
+	background-color:green;
+}
+#thirdButton{
+
+	background-color: yellow;
+}
+#fourthButton{
+
+	background-color:blue;
+}
+</style>
 <body>
 
 <p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
 
-<button onclick="myFunction1()">Click me</button>
-<button onclick="myFunction2()">Click me</button>
-<button onclick="myFunction3()">Click me</button>
-<button onclick="myFunction4()">Click me</button>
+<button id = "firstButton" onclick="myFunction1()">Click me</button>
+<button id = "secondButton" onclick="myFunction2()">Click me</button>
+<button id = "thirdButton" onclick="myFunction3()">Click me</button>
+<button id = "fourthButton" onclick="myFunction4()">Click me</button>
 
-<p id="demo"></p>
+	<h1 id="demo"></h1>
 
 <script>
 var NUMBER1 = 0;
