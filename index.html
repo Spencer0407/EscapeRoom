@@ -37,12 +37,12 @@ h1{
 
 <p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
 <div id="secondDiv">
-<button id = "firstButton" onclick="myFunction1()">Click me</button>
-<button id = "secondButton" onclick="myFunction2()">Click me</button>
-<button id = "thirdButton" onclick="myFunction3()">Click me</button>
-<button id = "fourthButton" onclick="myFunction4()">Click me</button>
+<button id = "firstButton" "BUTTON" onclick="myFunction1()">Click me</button>
+<button id = "secondButton"  "BUTTON" onclick="myFunction2()">Click me</button>
+<button id = "thirdButton"  "BUTTON" onclick="myFunction3()">Click me</button>
+<button id = "fourthButton"  "BUTTON" onclick="myFunction4()">Click me</button>
 </div>
-	<h1 id="demo">0000</h1>
+	<h1 id="demo">TEST0000</h1>
 
 <script>
 var NUMBER1 = 0;
@@ -91,6 +91,7 @@ function PRINTNUMBER(){
 		if(NUMBER1 == 2 && NUMBER2 == 2 && NUMBER3 == 2 && NUMBER4 == 2)
 		{
 			var audio = new Audio('UFO_Takeoff-Sonidor-1604321570.mp3');
+			document.getElementById("BUTTON").disabled = true;  
 			audio.play();
 		}
 	}
