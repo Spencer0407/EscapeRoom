@@ -84,8 +84,16 @@ function myFunction4() {
     
 }
 function PRINTNUMBER(){
+	CHECK();
 	document.getElementById("demo").innerHTML = NUMBER1+""+NUMBER2+""+NUMBER3+""+NUMBER4;
 }
+	function CHECK(){
+		if(NUMBER1 == 2 && NUMBER2 == 2 && NUMBER3 == 2 && NUMBER4 == 2)
+		{
+			var audio = new Audio('UFO_Takeoff-Sonidor-1604321570.mp3');
+			audio.play();
+		}
+	}
 </script>
 
 </body>
